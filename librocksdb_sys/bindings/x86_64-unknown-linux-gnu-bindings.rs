@@ -2631,12 +2631,6 @@ extern "C" {
     );
 }
 extern "C" {
-    pub fn crocksdb_options_set_enable_multi_batch_write(
-        opt: *mut crocksdb_options_t,
-        v: libc::c_uchar,
-    );
-}
-extern "C" {
     pub fn crocksdb_options_is_enable_multi_batch_write(
         opt: *mut crocksdb_options_t,
     ) -> libc::c_uchar;
